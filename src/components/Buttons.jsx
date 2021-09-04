@@ -1,17 +1,19 @@
 import React from 'react';
 import Styles from './Buttons.module.css';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 const Buttons = () => {
     return (
         <div className="d-grid gap-2">
-            <Button className={Styles.PrimaryBtn} variant="primary" size="lg">
-                NextPage
-            </Button>
-            <Button className={Styles.SeconderyBtn} variant="secondary" size="lg">
-                Previous Page
-            </Button>
+            <Link to="/Page1">
+                <Button className={Styles.PrimaryBtn} variant="primary" size="lg">NextPage</Button>
+            </Link>
+
+            <Link to="/Page2">
+                <Button className={Styles.SeconderyBtn} variant="secondary" size="lg">Previous Page</Button>
+            </Link>
 
           
 

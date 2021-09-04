@@ -11,6 +11,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.App {
+    text-align: center;
+}
+
 .toolbar {
     position: sticky;
     top: 0;

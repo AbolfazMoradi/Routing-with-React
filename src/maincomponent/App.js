@@ -26,7 +26,26 @@ const App = () => {
   }
 
   return (
-    <div>App</div>
+    <div className="App">
+    <nav className="toolbar" role="banner">
+      <span>{appName}</span>
+    </nav>
+
+    <div className="container">
+      <div className="output-container">
+        <div className="rial-price-output">Price: <strong>{rialValue}</strong> <small> rial</small></div>
+        <div className="usd-price-output">USD: <strong>{usdValue}</strong> <small> USD</small></div>
+      </div>
+      <input 
+        type="number"
+        className="usd-price-input" 
+        value={usdValueInput} 
+        onChange={e=>{SetUsdValueInput(e.target.value)}} 
+        placeholder="Enter USD price..." 
+      />
+      <button className="btn-convert" onClick={fetchPrice}>Convert</button>
+    </div>
+  </div>
   );
 }
 

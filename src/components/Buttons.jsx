@@ -1,7 +1,7 @@
 import React from 'react';
 import Styles from './Buttons.module.css';
 import { Button } from 'react-bootstrap';
-import {} from 'react-router-dom';
+
 
 const Buttons = () => {
     return (
@@ -13,6 +13,7 @@ const Buttons = () => {
                 Previous Page
             </Button>
 
+          
 
         </div>
     );

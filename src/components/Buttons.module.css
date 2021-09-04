@@ -1,0 +1,13 @@
+.PrimaryBtn {
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: 24%;
+}
+
+.SeconderyBtn {
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 24%;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import Styles from './Buttons.module.css';
 import { Button } from 'react-bootstrap';
+import {} from 'react-router-dom';
 
 const Buttons = () => {
     return (
@@ -11,6 +12,8 @@ const Buttons = () => {
             <Button className={Styles.SeconderyBtn} variant="secondary" size="lg">
                 Previous Page
             </Button>
+
+
         </div>
     );
 }

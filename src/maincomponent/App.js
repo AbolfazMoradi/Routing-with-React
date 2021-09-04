@@ -40,7 +40,7 @@ const App = () => {
         type="number"
         className="usd-price-input" 
         value={usdValueInput} 
-        onChange={e=>{SetUsdValueInput(e.target.value)}} 
+        onChange={e=>{setUsdValueInput(e.target.value)}} 
         placeholder="Enter USD price..." 
       />
       <button className="btn-convert" onClick={fetchPrice}>Convert</button>

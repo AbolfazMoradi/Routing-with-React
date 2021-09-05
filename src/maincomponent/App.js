@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import FetchButton from '../components/fetchButton';
 import Nav from '../components/Nav';
 import Prices from '../components/Prices';
 import ShowPrice from '../components/ShowPrice';
@@ -35,7 +36,7 @@ const App = () => {
     <div className="container">
         <Prices rialValue={rialValue} usdValue={usdValue} />
         <ShowPrice usdValueInput={usdValueInput} setterValue={setUsdValueInput} />
-      <button className="btn-convert" onClick={fetchPrice}>Convert</button>
+        <FetchButton fetchButton={fetchPrice} />
     </div>
   </div>
   );

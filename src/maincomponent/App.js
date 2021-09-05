@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Nav from '../components/Nav';
+import Prices from '../components/Prices';
+import ShowPrice from '../components/ShowPrice';
 import './App.css';
 
 const App = () => {
@@ -9,6 +11,9 @@ const App = () => {
   let [rialValue, setRialValue] = useState(0);
   let [usdValueInput, setUsdValueInput] = useState('');
 
+  const sendSetUsdValueInput = () => {
+    setUsdValueInput();
+  }
   const fetchPrice = () => {
     fetch('https://api.tgju.online/v1/data/sana/json')
     .then(result => {
@@ -28,20 +33,11 @@ const App = () => {
 
   return (
     <div className="App">
-        <Nav appName={appName} />
+      <Nav appName={appName} />
 
     <div className="container">
-      <div className="output-container">
-        <div className="rial-price-output">Price: <strong>{rialValue}</strong> <small> rial</small></div>
-        <div className="usd-price-output">USD: <strong>{usdValue}</strong> <small> USD</small></div>
-      </div>
-      <input 
-        type="number"
-        className="usd-price-input" 
-        value={usdValueInput} 
-        onChange={e=>{setUsdValueInput(e.target.value)}} 
-        placeholder="Enter USD price..." 
-      />
+        <Prices rialValue={rialValue} usdValue={usdValue} />
+        <ShowPrice usdValueInput={usdValueInput} setterValue={sendSetUsdValueInput} />
       <button className="btn-convert" onClick={fetchPrice}>Convert</button>
     </div>
   </div>

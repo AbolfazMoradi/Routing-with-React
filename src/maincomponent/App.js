@@ -12,6 +12,10 @@ const App = () => {
   let [rialValue, setRialValue] = useState(0);
   let [usdValueInput, setUsdValueInput] = useState('');
 
+  // const something = event => {
+  //   setUsdValueInput(event.target.value);
+  // }
+
   const fetchPrice = () => {
     fetch('https://api.tgju.online/v1/data/sana/json')
     .then(result => {

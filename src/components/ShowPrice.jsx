@@ -14,4 +14,4 @@ const ShowPrice = (props) => {
     );
 }
 
-export default ShowPrice();
+export default ShowPrice;

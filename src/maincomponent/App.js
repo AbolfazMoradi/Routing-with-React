@@ -11,9 +11,6 @@ const App = () => {
   let [rialValue, setRialValue] = useState(0);
   let [usdValueInput, setUsdValueInput] = useState('');
 
-  const sendSetUsdValueInput = () => {
-    setUsdValueInput();
-  }
   const fetchPrice = () => {
     fetch('https://api.tgju.online/v1/data/sana/json')
     .then(result => {
@@ -37,7 +34,7 @@ const App = () => {
 
     <div className="container">
         <Prices rialValue={rialValue} usdValue={usdValue} />
-        <ShowPrice usdValueInput={usdValueInput} setterValue={sendSetUsdValueInput} />
+        <ShowPrice usdValueInput={usdValueInput} setterValue={setUsdValueInput} />
       <button className="btn-convert" onClick={fetchPrice}>Convert</button>
     </div>
   </div>

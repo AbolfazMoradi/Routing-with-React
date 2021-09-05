@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import catchErr from '../components/catchErr';
 import FetchButton from '../components/fetchButton';
 import Nav from '../components/Nav';
 import Prices from '../components/Prices';

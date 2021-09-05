@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Nav from '../components/Nav';
 import './App.css';
 
 const App = () => {
@@ -27,9 +28,7 @@ const App = () => {
 
   return (
     <div className="App">
-    <nav className="toolbar" role="banner">
-      <span>{appName}</span>
-    </nav>
+        <Nav appName={appName} />
 
     <div className="container">
       <div className="output-container">

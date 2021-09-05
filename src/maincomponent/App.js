@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import catchErr from '../components/catchErr';
 import FetchButton from '../components/fetchButton';
 import Nav from '../components/Nav';
 import Prices from '../components/Prices';
@@ -11,10 +12,6 @@ const App = () => {
   let [usdValue, setUsdValue] = useState(0);
   let [rialValue, setRialValue] = useState(0);
   let [usdValueInput, setUsdValueInput] = useState('');
-
-  // const something = event => {
-  //   setUsdValueInput(event.target.value);
-  // }
 
   const fetchPrice = () => {
     fetch('https://api.tgju.online/v1/data/sana/json')

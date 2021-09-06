@@ -2,9 +2,11 @@ import React from 'react';
 import Prices from './Prices';
 import ShowPrice from './ShowPrice';
 
-const CleanData = () => {
+const CleanData = (props) => {
     return(
-        <div></div>
+        <div>
+            <button>Clean Data</button>
+        </div>
     );
 }
 

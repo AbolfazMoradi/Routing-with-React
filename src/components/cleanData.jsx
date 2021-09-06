@@ -1,4 +1,6 @@
 import React from 'react';
+import Prices from './Prices';
+import ShowPrice from './ShowPrice';
 
 const CleanData = () => {
     return(

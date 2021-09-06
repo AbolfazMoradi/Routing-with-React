@@ -1,5 +1,4 @@
 import React from 'react';
-import CleanData from './cleanData';
 
 const ShowPrice = (props) => {
     return(

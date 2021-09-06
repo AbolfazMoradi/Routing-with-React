@@ -1,8 +1,6 @@
 import React from 'react';
-import Prices from './Prices';
-import ShowPrice from './ShowPrice';
 
-const CleanData = (props) => {
+const CleanData = () => {
     return(
         <div>
             <button>Clean Data</button>
